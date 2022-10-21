@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>novas funçoes nativas (built-in)</title>
+        <style>
+            .rwd-MastHead{
+                display: flex;
+                background-color: #dbeb62;
+                color: #372948;
+                flex-direction: row;
+                justify-content: space-between;
+
+            }
+            .item{
+                border:4px solid #1C6758;
+                height: 100px;
+                flex: 1;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="rwd-MastHead">
+            <div id="myDiv" class="item rwd-MastHead">
+                Este Item aqui é uma dic adaptariva
+            </div>
+            <div id="demo1" class="item"></div>
+            <div id="demo2" class="item"></div>
+            <div id="demo3" class="item"></div>
+
+        </div>
+        <script>
+            let string_frase = document.getElementById("myDiv").innerHTML;
+            document.getElementById("demo1").innerHTML=string_frase.lastIndexOf("a");
+            let aux = string_frase.substring(string_frase.indexOf("div"),string_frase.length-1)
+            document.getElementById("demo2").innerHTML=aux;
+            aux=string_frase.toLocaleUpperCase();
+            document.getElementById("demo3").innerHTML=aux;
+        </script>
+    </body>
+</html>
+<!--
+    substring(inic, fim)
+    substr(inic, fim)
+    toLowerCase(substring)
+    toUpperCase()
+    ChartAt(numero)
+    indexOf(substring)
+    lastIndexOf(substring)
+    length
+-->
