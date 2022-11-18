@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>exercicio 1</title>
+    </head>
+    <body>
+        <div id="sigla" class="sigla"></div>
+        <script>
+          
+            let sigla = prompt("insira uma sigla de algum estado do Brasil");
+            
+            function exibeValor(){
+
+                switch(sigla){
+
+                case 'rj':
+                alert("carioca raiz");
+                break;   
+
+                case 'sp':
+                alert("paulistano de cria");
+                break;
+                
+                case 'rs': 
+                alert("bah gaúcho né");
+                break;
+
+                case 'sc':
+                alert("catarinense meu amor");
+                break;
+
+                case 'mg': 
+                alert("esse trem de mineiro");
+                break;
+             } 
+
+             document.getElementById("sigla").innerHTML=sigla;
+
+            }
+
+            exibeValor();
+
+        </script>
+       <button value="" onclick="exibeValor()">exibe siglas</button>
+      
+    </body>
+</html>
